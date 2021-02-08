@@ -1,6 +1,6 @@
 Pour le level14, aucun fichier n'est donné dans le home et aucun fichier n'appartient à flag14 ou level14 sur le système.
 
-Cependant, nous avons appris avec le level13 qu'il est possible de remplacer une valeur avec GDB et ainsi de changer pendant l'execution la valeur de retour de ma fonction `getuid`.
+Cependant, nous avons appris avec le level13 qu'il est possible de remplacer une valeur avec GDB et ainsi de changer pendant l'execution la valeur de retour de la fonction `getuid`.
 
 Donc rien ne nous empêche de le faire sur `getflag` tant que gdb fonctionne avec.
 

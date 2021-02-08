@@ -7,7 +7,7 @@ Dans le code, on peut voir un appel système:
 @output = `egrep "^$xx" /tmp/xd 2>&1`;
 ```
 
-Ce donc ça que l'on va exploiter, le seul problème étant que la variable `$xx` subit des traitements avant d'être utilisé.
+C'est donc ça que l'on va exploiter, le seul problème étant que la variable `$xx` subit des traitements avant d'être utilisé.
 
 Ces changement sont appliqués par 2 regex:
 1. Remplace toutes les lettres minuscules par leur équivalents en majuscule
@@ -21,7 +21,7 @@ On va donc placer notre code dans un fichier et essayer d'executer ce fichier:
 
 `curl 'localhost:4646?x=$(/tmp/GETFLAG)'`
 
-Cet example ne fonctionne pas car le shell ne trouve pas le dossier `/TMP/GETFLAG`.
+Cet exemple ne fonctionne pas car le shell ne trouve pas le dossier `/TMP/GETFLAG`.
 
 Pour contrer ce problème, on peut utiliser une wildcard ce qui donne: `/*/GETFLAG`:
 
