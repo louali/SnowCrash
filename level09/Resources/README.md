@@ -14,7 +14,7 @@ En testant plusieurs valeurs, j'ai remarqué que le programme renvoyait la même
 
 ![image](./tests.png)
 
-Pour inverser ces changements, il suffit donc de soustraire, c'est ce que fait ce script en python:
+Pour inverser ces changements, il suffit donc de soustraire à chaque charactère sa place dans la chaine, c'est ce que fait ce script en python:
 
 ```
 import sys
